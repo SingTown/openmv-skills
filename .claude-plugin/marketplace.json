@@ -1,0 +1,17 @@
+{
+  "name": "singtown",
+  "owner": {
+    "name": "SingTown"
+  },
+  "metadata": {
+    "description": "SingTown plugins for OpenMV embedded computer vision development."
+  },
+  "plugins": [
+    {
+      "name": "openmv",
+      "source": "./plugins/openmv",
+      "description": "OpenMV development workflows with local documentation, examples, and MCP camera tools.",
+      "category": "productivity"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "openmv",
+  "version": "0.1.0",
+  "description": "OpenMV development workflows with local documentation, examples, and MCP camera tools.",
+  "author": {
+    "name": "SingTown"
+  },
+  "license": "MIT"
+}

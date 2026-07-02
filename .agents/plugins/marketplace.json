@@ -1,0 +1,20 @@
+{
+  "name": "singtown",
+  "interface": {
+    "displayName": "SingTown"
+  },
+  "plugins": [
+    {
+      "name": "openmv",
+      "source": {
+        "source": "local",
+        "path": "./plugins/openmv"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

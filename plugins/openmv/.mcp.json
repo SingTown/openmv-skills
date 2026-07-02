@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "openmv": {
+      "command": "openmv_mcp_server",
+      "args": ["--mode", "stdio"],
+      "cwd": "."
+    }
+  }
+}

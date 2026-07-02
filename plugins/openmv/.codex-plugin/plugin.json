@@ -1,0 +1,26 @@
+{
+  "name": "openmv",
+  "version": "0.1.0",
+  "description": "OpenMV workflow helpers for Codex.",
+  "author": {
+    "name": "SingTown"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "OpenMV",
+    "shortDescription": "Local OpenMV workflow helpers for Codex.",
+    "longDescription": "Provides OpenMV development workflows with local documentation, examples, and MCP camera tools.",
+    "developerName": "SingTown",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Write an OpenMV color tracking script.",
+      "Debug this OpenMV camera script.",
+      "Find the right OpenMV API for this task."
+    ]
+  }
+}
