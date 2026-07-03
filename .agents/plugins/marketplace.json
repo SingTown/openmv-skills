@@ -8,7 +8,7 @@
       "name": "openmv",
       "source": {
         "source": "local",
-        "path": "./plugins/openmv"
+        "path": "./"
       },
       "policy": {
         "installation": "AVAILABLE",

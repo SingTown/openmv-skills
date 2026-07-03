@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "openmv",
-      "source": "./plugins/openmv",
+      "source": "./",
       "description": "OpenMV development workflows with local documentation, examples, and MCP camera tools.",
       "category": "productivity"
     }

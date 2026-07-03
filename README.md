@@ -1,6 +1,6 @@
 # OpenMV Skills
 
-A plugin marketplace by [SingTown](https://singtown.com) for OpenMV embedded computer vision development.
+A plugin by [SingTown](https://singtown.com) for OpenMV embedded computer vision development.
 
 The `openmv` plugin turns your coding agent into an OpenMV MicroPython development assistant. It includes:
 
