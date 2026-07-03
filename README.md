@@ -1,19 +1,28 @@
 # OpenMV Skills
 
-A plugin by [SingTown](https://singtown.com) for OpenMV embedded computer vision development.
+English | [简体中文](README-CN.md)
 
-The `openmv` plugin turns your coding agent into an OpenMV MicroPython development assistant. It includes:
+A plugin by [SingTown](https://singtown.com) for OpenMV Camera development.
 
-- **Local documentation** — the full OpenMV API reference, searchable offline
-- **Example scripts** — hundreds of official OpenMV examples covering camera capture, color tracking, face detection, QR codes, machine learning, and more
-- **MCP camera tools** — connect to a real OpenMV camera to run, debug, and deploy scripts directly from your agent
+## What the agent does
+
+When you ask for OpenMV help, the agent is instructed to work like an embedded vision assistant, not just a code generator. It will:
+
+- Automatically search the bundled official examples for similar scripts and proven patterns
+- Check the local OpenMV API documentation before using functions or modules, so it avoids guessing unsupported APIs
+- Write a complete runnable MicroPython script and save it locally as the source of truth
+- When you want to test on hardware, discover and connect to an OpenMV camera through the MCP tools
+- Run the saved script on the camera, read stdout/stderr, and capture frames from the camera
+- Inspect the captured image output, compare it with the intended behavior, and iterate on the script
+- Debug errors, tune thresholds or parameters, and rerun the script until the result matches the task
+- Deploy the script as `main.py` only when you explicitly want it to run on boot
 
 ## Installation
 
 Type the following in Claude Code or Codex:
 
-```
-install https://github.com/SingTown/openmv-mcp and https://github.com/SingTown/openmv-skills
+```text
+install https://raw.githubusercontent.com/SingTown/openmv-skills/refs/heads/main/INSTALL.md
 ```
 
 ## License
