@@ -42,13 +42,15 @@ Parse the user's request. Determine if they need:
 
 **Always do this before writing code.** Refer to the reference files above for search paths and directory structure.
 
-### Step 3: Write or Modify Code
+### Step 3: Write Code and Save It Locally
 
 Based on documentation and examples:
 - Generate a **complete, runnable** MicroPython script
 - Follow OpenMV conventions (sensor init → main loop with snapshot)
 - Use only APIs that exist in the documentation
 - Add comments explaining key parameters
+
+**Always save the script to a local file first** (using Write) before running it on the camera. Save it as a descriptively named `.py` file in the current working directory (e.g., `color_tracking.py`), unless the user specifies a different path. The local file is the single source of truth — all edits happen there.
 
 **Common script structure:**
 ```python
@@ -72,12 +74,12 @@ while True:
 
 ### Step 4: Run and Test on Camera (when requested)
 
-If the user wants to run the code on a real camera, use MCP tools:
+If the user wants to run the code on a real camera, run the **locally saved file from Step 3** using MCP tools:
 
 1. **Discover cameras** → `camera_list`
 2. **Connect** → `camera_connect` with the serial port path
 3. **Get info** → `camera_info` to check board type and sensor
-4. **Run script** → `script_run` with the MicroPython code (runs in RAM, nothing is written to the camera)
+4. **Run script** → `script_run` with the contents of the local `.py` file (runs in RAM, nothing is written to the camera)
 5. **Check output** → `script_output` to read stdout/stderr
 6. **Capture frame** → `frame_capture` to see what the camera sees
 7. **Stop script** → `script_stop` when done
@@ -86,11 +88,11 @@ If the user wants to run the code on a real camera, use MCP tools:
 
 ### Step 5: Iterate
 
-Based on script output, captured frames, or user feedback, adjust the code and re-run.
+Based on script output, captured frames, or user feedback, edit the local file first, then re-run it on the camera. Never run code that differs from what is saved locally.
 
 ### Step 6: Deploy as main.py (only when the user wants the script to run on boot)
 
-To make the script run automatically when the camera powers on, get `drivePath` (the camera's USB drive mount point) from `camera_info`, then use file operations (e.g., Write) to save the script as `main.py` under that path.
+To make the script run automatically when the camera powers on, get `drivePath` (the camera's USB drive mount point) from `camera_info`, then copy the local `.py` file from Step 3 to `main.py` under that path.
 
 ## Important Rules
 
