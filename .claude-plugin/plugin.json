@@ -1,6 +1,6 @@
 {
   "name": "openmv",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "OpenMV development workflows with local documentation, examples, and MCP camera tools.",
   "author": {
     "name": "SingTown"
